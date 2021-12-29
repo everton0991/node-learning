@@ -15,6 +15,7 @@
   "author": "Everton Renan",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^14.17.7",
     "@types/validator": "^13.6.3",
@@ -38,6 +39,7 @@
     ]
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.6.0"
   }
 }
