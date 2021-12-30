@@ -9,6 +9,7 @@ module.exports = {
     '!**/protocols/**',
     '!**/test/**'
   ],
+  preset: '@shelf/jest-mongodb',
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
