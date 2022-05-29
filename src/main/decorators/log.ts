@@ -11,10 +11,3 @@ export class LogControllerDecorator implements Controller {
     return await this.controller.handle(httpRequest)
   }
 }
-
-// const httpResponse =
-
-//     if (httpResponse.statusCode === 500) {
-//       // log
-//     }
-//     return httpResponse
