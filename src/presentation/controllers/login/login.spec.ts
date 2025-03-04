@@ -6,7 +6,7 @@ import { Authentication } from '../../../domain/usecases/authentication'
 
 const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
-    isValid (email: string): boolean {
+    isValid (_email: string): boolean {
       return true
     }
   }
@@ -15,7 +15,7 @@ const makeEmailValidator = (): EmailValidator => {
 
 const makeAuthentication = (): Authentication => {
   class AuthenticationStub implements Authentication {
-    async auth (email: string, password: string): Promise<string> {
+    async auth (_email: string, _password: string): Promise<string> {
       return 'any_token'
     }
   }
