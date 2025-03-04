@@ -33,7 +33,7 @@ export class LoginController implements Controller {
         return unauthorized()
       }
 
-      return ok(httpRequest.body)
+      return ok({ accessToken })
     } catch (error) {
       return serverError(error)
     }
