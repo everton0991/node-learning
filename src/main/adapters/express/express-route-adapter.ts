@@ -1,6 +1,7 @@
 import { Controller, HttpRequest, HttpResponse } from '../../../presentation/protocols'
 import { Request, Response } from 'express'
 
+// TODO - Fix any type
 export const adaptRoute: any = (controller: Controller) => {
   return async (req: Request, res: Response) => {
     const httpRequest: HttpRequest = {
