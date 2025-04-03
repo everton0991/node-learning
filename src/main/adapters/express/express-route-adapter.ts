@@ -1,7 +1,8 @@
-import { Controller, HttpRequest, HttpResponse } from '../../presentation/protocols'
+import { Controller, HttpRequest, HttpResponse } from '../../../presentation/protocols'
 import { Request, Response } from 'express'
 
-export const adaptRoute = (controller: Controller) => {
+// TODO - Fix any type
+export const adaptRoute: any = (controller: Controller) => {
   return async (req: Request, res: Response) => {
     const httpRequest: HttpRequest = {
       body: req.body
